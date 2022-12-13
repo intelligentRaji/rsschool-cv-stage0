@@ -336,23 +336,41 @@ body {
   }
 
   &__slider {
-    width: 1vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.project-slider {
+.projects-slider {
   &__labels {
+    width: 47px;
+    height: 47px;
+  }
+
+  &__labels--left {
+  }
+
+  &__label {
+  }
+
+  &__label--left {
+  }
+
+  &__viewport {
+    max-width: 1200px;
+    display: flex;
+    gap: 60px;
   }
 
   &__item {
+    width: 100%;
+    border: 1px solid $grey;
   }
-}
-.projects-slider {
-  &__label {
+
+  &__labels--right {
   }
-}
-.porjects-slider {
-  &__viewport {
+
+  &__label--right {
   }
 }
