@@ -294,7 +294,7 @@ body {
 
   &__bar {
     margin-top: 6px;
-    background-color: $grey;
+    background-color: $lightgrey;
     height: 10px;
   }
 
@@ -483,10 +483,10 @@ body {
 }
 
 #s2:checked ~ .projects__slider .projects-slider__item--first {
-  left: -100%;
+  left: -1260px;
 }
 
 #s2:checked ~ .projects__slider .projects-slider__item--second {
-  left: -100%;
+  left: -1260px;
   opacity: 1;
 }

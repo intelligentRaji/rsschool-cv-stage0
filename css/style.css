@@ -389,7 +389,7 @@ html {
 }
 .skills-item__bar {
   margin-top: 6px;
-  background-color: #adadad;
+  background-color: #f0f0f0;
   height: 10px;
 }
 .skills-item__line {
@@ -549,10 +549,10 @@ html {
 }
 
 #s2:checked ~ .projects__slider .projects-slider__item--first {
-  left: -100%;
+  left: -1260px;
 }
 
 #s2:checked ~ .projects__slider .projects-slider__item--second {
-  left: -100%;
+  left: -1260px;
   opacity: 1;
 }
