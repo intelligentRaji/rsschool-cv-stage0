@@ -97,7 +97,7 @@ h6 {
   font-style: normal;
   font-display: swap;
 }
-.skills__title, .about__title {
+.projects__title, .skills__title, .about__title {
   font-family: "Switzer";
   font-style: normal;
   font-weight: 300;
@@ -409,4 +409,17 @@ html {
 }
 .skills-item__line--figma {
   width: 20%;
+}
+
+.projects__title {
+  color: #202020;
+  margin-bottom: 40px;
+}
+.projects__input {
+  position: absolute;
+  visibility: hidden;
+}
+.projects__slider {
+  width: 1vh;
+  display: flex;
 }

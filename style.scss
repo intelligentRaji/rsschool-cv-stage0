@@ -322,3 +322,37 @@ body {
     width: 20%;
   }
 }
+
+.projects {
+  &__title {
+    @extend %h2;
+    color: $black;
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  &__slider {
+    width: 1vh;
+    display: flex;
+  }
+}
+
+.project-slider {
+  &__labels {
+  }
+
+  &__item {
+  }
+}
+.projects-slider {
+  &__label {
+  }
+}
+.porjects-slider {
+  &__viewport {
+  }
+}
