@@ -1,0 +1,324 @@
+@import "_nullstyle.scss";
+@import "_fonts.scss";
+
+$green: #2b6359;
+$yellow: #ffe6a6;
+$white: #fff;
+$grey: #adadad;
+$black: #202020;
+$lightgrey: #f0f0f0;
+
+%h2 {
+  font-family: "Switzer";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+%skills-item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: $black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+.header {
+  padding: 50px 0 0 0;
+  &__navigation {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    a,
+    a:visited {
+      color: $black;
+      opacity: 1;
+      transition: all 0.3s ease 0s;
+    }
+    a:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__link {
+  }
+
+  &__line {
+    background-color: $grey;
+    margin-top: 53px;
+  }
+}
+
+.picture {
+  position: relative;
+  padding-bottom: 200px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  &__img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: url("../assets/img/picture__img.png");
+    background-size: cover;
+    margin: 0px 0px 50px 0px;
+  }
+
+  &__name {
+    font-family: "Switzer";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 100%;
+    margin: 0px 0px 30px 0px;
+  }
+
+  &__job {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    color: $grey;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    &:hover .picture__social {
+      transform: scale(120%);
+    }
+  }
+
+  &__social {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.51, 1.12, 1, 1) 0s;
+  }
+
+  &__social--grey {
+    background-color: rgba(173, 173, 173, 0.5);
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__social--green {
+    background-color: rgba(43, 99, 89, 0.5);
+  }
+
+  &__social--yellow {
+    background-color: rgba(255, 230, 166, 0.5);
+  }
+
+  &__logo--grey {
+    position: absolute;
+    left: 2%;
+    top: 65.8%;
+    animation-name: lgrey;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+  &__logo--green {
+    position: absolute;
+    left: 23.6%;
+    top: 0%;
+    animation-name: lgreen;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+
+  &__logo--yellow {
+    position: absolute;
+    left: 90.8%;
+    top: 57.6%;
+    animation-name: lyellow;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+}
+
+@keyframes lgrey {
+  0% {
+    top: 65.8%;
+  }
+  100% {
+    top: 60.8%;
+  }
+}
+
+@keyframes lgreen {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 5%;
+  }
+}
+
+@keyframes lyellow {
+  0% {
+    top: 57.6%;
+  }
+  100% {
+    top: 52.6%;
+  }
+}
+
+.about {
+  padding-bottom: 200px;
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+
+  &__title {
+    @extend %h2;
+    color: $black;
+  }
+
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: $black;
+  }
+}
+
+.skills {
+  padding-bottom: 200px;
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+
+  &__title {
+    @extend %h2;
+    color: $black;
+  }
+
+  &__lang {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  &__item {
+  }
+}
+
+.skills-item {
+  &__lang {
+    @extend %skills-item;
+    display: inline-block;
+  }
+
+  &__procents {
+    @extend %skills-item;
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  &__bar {
+    margin-top: 6px;
+    background-color: $grey;
+    height: 10px;
+  }
+
+  &__line {
+    height: 100%;
+    background-color: $yellow;
+  }
+
+  &__line--html {
+    width: 40%;
+  }
+
+  &__line--css {
+    width: 40%;
+  }
+
+  &__line--js {
+    width: 10%;
+  }
+
+  &__line--git {
+    width: 20%;
+  }
+
+  &__line--figma {
+    width: 20%;
+  }
+}

@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Switzer";
+  src: url("assets/fonts/switzer/Switzer-Light.eot");
+  src: url("assets/fonts/switzer/Switzer-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/switzer/Switzer-Light.woff2") format("woff2"), url("assets/fonts/switzer/Switzer-Light.woff") format("woff"), url("assets/fonts/switzer/Switzer-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.skills__title, .about__title {
+  font-family: "Switzer";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 110%;
+}
+
+.skills-item__procents, .skills-item__lang {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #202020;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+.header {
+  padding: 50px 0 0 0;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.header__item a,
+.header__item a:visited {
+  color: #202020;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+.header__item a:hover {
+  opacity: 0.75;
+}
+.header__line {
+  background-color: #adadad;
+  margin-top: 53px;
+}
+
+.picture {
+  position: relative;
+  padding-bottom: 200px;
+}
+.picture__container {
+  position: relative;
+}
+.picture__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.picture__img {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: url("../assets/img/picture__img.png");
+  background-size: cover;
+  margin: 0px 0px 50px 0px;
+}
+.picture__name {
+  font-family: "Switzer";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 100%;
+  margin: 0px 0px 30px 0px;
+}
+.picture__job {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  color: #adadad;
+}
+.picture__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.picture__logo:hover .picture__social {
+  transform: scale(120%);
+}
+.picture__social {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.51, 1.12, 1, 1) 0s;
+}
+.picture__social--grey {
+  background-color: rgba(173, 173, 173, 0.5);
+}
+.picture__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.picture__social--green {
+  background-color: rgba(43, 99, 89, 0.5);
+}
+.picture__social--yellow {
+  background-color: rgba(255, 230, 166, 0.5);
+}
+.picture__logo--grey {
+  position: absolute;
+  left: 2%;
+  top: 65.8%;
+  -webkit-animation-name: lgrey;
+          animation-name: lgrey;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+          animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.picture__logo--green {
+  position: absolute;
+  left: 23.6%;
+  top: 0%;
+  -webkit-animation-name: lgreen;
+          animation-name: lgreen;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+          animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.picture__logo--yellow {
+  position: absolute;
+  left: 90.8%;
+  top: 57.6%;
+  -webkit-animation-name: lyellow;
+          animation-name: lyellow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+          animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes lgrey {
+  0% {
+    top: 65.8%;
+  }
+  100% {
+    top: 60.8%;
+  }
+}
+
+@keyframes lgrey {
+  0% {
+    top: 65.8%;
+  }
+  100% {
+    top: 60.8%;
+  }
+}
+@-webkit-keyframes lgreen {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 5%;
+  }
+}
+@keyframes lgreen {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 5%;
+  }
+}
+@-webkit-keyframes lyellow {
+  0% {
+    top: 57.6%;
+  }
+  100% {
+    top: 52.6%;
+  }
+}
+@keyframes lyellow {
+  0% {
+    top: 57.6%;
+  }
+  100% {
+    top: 52.6%;
+  }
+}
+.about {
+  padding-bottom: 200px;
+}
+.about__block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+.about__title {
+  color: #202020;
+}
+.about__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #202020;
+}
+
+.skills {
+  padding-bottom: 200px;
+}
+.skills__block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+.skills__title {
+  color: #202020;
+}
+.skills__lang {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.skills-item__lang {
+  display: inline-block;
+}
+.skills-item__procents {
+  display: inline-block;
+  margin-right: auto;
+}
+.skills-item__bar {
+  margin-top: 6px;
+  background-color: #adadad;
+  height: 10px;
+}
+.skills-item__line {
+  height: 100%;
+  background-color: #ffe6a6;
+}
+.skills-item__line--html {
+  width: 40%;
+}
+.skills-item__line--css {
+  width: 40%;
+}
+.skills-item__line--js {
+  width: 10%;
+}
+.skills-item__line--git {
+  width: 20%;
+}
+.skills-item__line--figma {
+  width: 20%;
+}

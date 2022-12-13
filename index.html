@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CV</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#about" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="#skills" class="header__link">Skills</a>
+              </li>
+              <li class="header__item">
+                <a href="#projects" class="header__link">Projects</a>
+              </li>
+              <li class="header__item">
+                <a href="#code" class="header__link">Code example</a>
+              </li>
+              <li class="header__item">
+                <a href="education" class="header__link">Education</a>
+              </li>
+              <li class="header__item">
+                <a href="languages" class="header__link">Languages</a>
+              </li>
+              <li class="header__item">
+                <a href="contact" class="header__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__line horizontal"></div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="picture">
+          <div class="container picture__container">
+            <div class="picture__block">
+              <div class="picture__img"></div>
+              <h1 class="picture__name">Dmitry Siergeichyk</h1>
+              <p class="picture__job">Front-end Developer (Beginner)</p>
+            </div>
+            <a href="#" class="picture__logo picture__logo--grey">
+              <div class="picture__social picture__social--grey">
+                <img
+                  src="assets/img/svg/_Google.svg"
+                  alt="gmail"
+                  class="picture__icon"
+                />
+              </div>
+            </a>
+            <a href="#" class="picture__logo picture__logo--green"
+              ><div class="picture__social picture__social--green">
+                <img
+                  src="assets/img/svg/_Github.svg"
+                  alt="github"
+                  class="picture__icon"
+                /></div
+            ></a>
+            <a href="#" class="picture__logo picture__logo--yellow"
+              ><div class="picture__social picture__social--yellow">
+                <img
+                  src="assets/img/svg/_Instagram.svg"
+                  alt="instagram"
+                  class="picture__icon"
+                /></div
+            ></a>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="about__block">
+              <h2 class="about__title">About me</h2>
+              <p class="about__text">
+                Hello! I am a beginner frontend developer. I have been studying
+                this area for about two months. Before that, for two years, I
+                worked as a teacher at a music school. I like the profession of
+                a front-end developer because you can endlessly develop in it,
+                therefore, I hope to achieve great success.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="skills" id="skills">
+          <div class="container">
+            <div class="skills__block">
+              <h2 class="skills__title">Skills</h2>
+              <div class="skills__lang">
+                <div class="skills__item">
+                  <p class="skills-item__lang">HTML</p>
+                  <p class="skills-item__procents">40%</p>
+                  <div class="skills-item__bar">
+                    <div
+                      class="skills-item__line skills-item__line--html"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skills__item">
+                  <p class="skills-item__lang">CSS/SASS</p>
+                  <p class="skills-item__procents">40%</p>
+                  <div class="skills-item__bar">
+                    <div class="skills-item__line skills-item__line--css"></div>
+                  </div>
+                </div>
+                <div class="skills__item">
+                  <p class="skills-item__lang">JAVASCRIPT</p>
+                  <p class="skills-item__procents">10%</p>
+                  <div class="skills-item__bar">
+                    <div class="skills-item__line skills-item__line--js"></div>
+                  </div>
+                </div>
+                <div class="skills__item">
+                  <p class="skills-item__lang">GIT</p>
+                  <p class="skills-item__procents">20%</p>
+                  <div class="skills-item__bar">
+                    <div class="skills-item__line skills-item__line--git"></div>
+                  </div>
+                </div>
+                <div class="skills__item">
+                  <p class="skills-item__lang">FIGMA</p>
+                  <p class="skills-item__procents">20%</p>
+                  <div class="skills-item__bar">
+                    <div
+                      class="skills-item__line skills-item__line--figma"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
