@@ -281,6 +281,11 @@ body {
 }
 
 .skills-item {
+  &__type {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__lang {
     @extend %skills-item;
     display: inline-block;
@@ -289,7 +294,6 @@ body {
   &__procents {
     @extend %skills-item;
     display: inline-block;
-    margin-right: auto;
   }
 
   &__bar {
@@ -565,5 +569,166 @@ body {
     left: 0;
     top: 50%;
     background-color: $grey;
+  }
+}
+
+.languages {
+  padding-bottom: 200px;
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+
+  &__title {
+    @extend %h2;
+    color: $black;
+  }
+
+  &__lang {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  &__item {
+  }
+}
+
+.languages-item {
+  &__type {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__lang {
+    @extend %skills-item;
+    display: inline-block;
+  }
+
+  &__level {
+    @extend %skills-item;
+    display: inline-block;
+  }
+
+  &__bar {
+    margin-top: 6px;
+    background-color: $lightgrey;
+    height: 10px;
+  }
+
+  &__line {
+    height: 100%;
+    background-color: $yellow;
+  }
+
+  &__line--eng {
+    width: 50%;
+  }
+
+  &__line--rus {
+    width: 100%;
+  }
+
+  &__line--pl {
+    width: 33.33%;
+  }
+}
+
+.contacts {
+  background-color: $green;
+  padding: 60px 0 30px 0;
+  &__block {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    flex: 1 1 33.33%;
+  }
+
+  &__title {
+    @extend %h2;
+    color: $white;
+  }
+
+  &__info {
+    @extend %skills-item;
+    font-weight: 300;
+    color: $lightgrey;
+  }
+
+  &__social {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: scale(110%);
+      opacity: 0.75;
+    }
+  }
+
+  &__line {
+    background-color: $lightgrey;
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacts-info {
+  &__link {
+    margin-bottom: 20px;
+    &,
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__mail {
+  }
+}
+
+.contacts-bottom {
+  &__rss {
+    fill: $lightgrey;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      fill: $yellow;
+    }
+  }
+
+  &__svg {
+    width: 150px;
+    height: 80px;
+  }
+
+  &__designer {
+    @extend %skills-item;
+    font-weight: 300;
+    color: $lightgrey;
+    a,
+    a:visited {
+      color: $lightgrey;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
