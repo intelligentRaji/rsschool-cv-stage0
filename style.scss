@@ -132,7 +132,7 @@ body {
     left: 0;
     top: 0;
     &:hover .picture__social {
-      transform: scale(120%);
+      transform: scale(1.2);
     }
   }
 
@@ -403,7 +403,7 @@ body {
     transform: translateY(-50%);
     &:hover {
       .projects-slider__icon--left {
-        transform: scale(120%);
+        transform: scale(1.2);
       }
     }
   }
@@ -438,7 +438,7 @@ body {
     transform: translateY(-50%);
     &:hover {
       .projects-slider__icon--right {
-        transform: rotate(180deg) scale(120%);
+        transform: rotate(180deg) scale(1.2);
       }
     }
   }
@@ -668,7 +668,7 @@ body {
   &__element {
     transition: all 0.3s ease 0s;
     &:hover {
-      transform: scale(110%);
+      transform: scale(1.1);
       opacity: 0.75;
     }
   }
