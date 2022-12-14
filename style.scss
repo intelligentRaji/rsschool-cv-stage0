@@ -325,6 +325,7 @@ body {
 }
 
 .projects {
+  padding-bottom: 200px;
   &__input {
     position: absolute;
     visibility: hidden;
@@ -489,4 +490,80 @@ body {
 #s2:checked ~ .projects__slider .projects-slider__item--second {
   left: -1260px;
   opacity: 1;
+}
+
+.code {
+  padding-bottom: 200px;
+  &__title {
+    @extend %h2;
+    color: $black;
+    margin-bottom: 70px;
+  }
+
+  &__viewport {
+    background-color: rgba(43, 99, 89, 0.3);
+    border: 1px solid $grey;
+    padding: 80px 180px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: $black;
+  }
+}
+
+.education {
+  padding-bottom: 200px;
+  &__title {
+    @extend %h2;
+    color: $black;
+    margin-bottom: 40px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    position: relative;
+  }
+
+  &__item {
+    display: flex;
+    gap: 60px;
+  }
+}
+
+.education-item {
+  &__element {
+    flex: 1 1 33.333%;
+    padding: 40px 0;
+  }
+
+  &__year {
+    @extend %skills-item;
+    color: $grey;
+  }
+
+  &__school {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: $black;
+  }
+
+  &__type {
+    @extend %skills-item;
+    color: rgba(32, 32, 32, 0.8);
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: $grey;
+  }
 }
