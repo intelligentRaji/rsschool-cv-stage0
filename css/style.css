@@ -695,14 +695,16 @@ html {
   display: flex;
   gap: 30px;
 }
+.contacts__element {
+  transition: all 0.3s ease 0s;
+}
+.contacts__element:hover {
+  transform: scale(110%);
+  opacity: 0.75;
+}
 .contacts__icon {
   width: 40px;
   height: 40px;
-  transition: all 0.3s ease 0s;
-}
-.contacts__icon:hover {
-  transform: scale(110%);
-  opacity: 0.75;
 }
 .contacts__line {
   background-color: #f0f0f0;

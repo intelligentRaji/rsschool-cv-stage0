@@ -665,15 +665,17 @@ body {
     gap: 30px;
   }
 
-  &__icon {
-    width: 40px;
-    height: 40px;
+  &__element {
     transition: all 0.3s ease 0s;
-
     &:hover {
       transform: scale(110%);
       opacity: 0.75;
     }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
   }
 
   &__line {
