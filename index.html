@@ -223,7 +223,7 @@
           <div class="container">
             <h2 class="code__title">Code example</h2>
             <div class="code__viewport">
-              <pre><code>  &lt;div class="skills__block"&gt;<br />   &lt;h2 class="skills__title"&gt;Skills&lt;/h2&gt;<br />   &lt;div class="skills__lang"&gt;<br />     &lt;div class="skills__item"&gt;<br />       &lt;p class="skills-item__lang"&gt;HTML&lt;/p&gt;<br />       &lt;p class="skills-item__procents"&gt;40%&lt;/p&gt;<br />       &lt;div class="skills-item__bar"&gt;<br />         &lt;div class="skills-item__line skills-item__line--html"&gt;&lt;/div&gt;<br />       &lt;/div&gt;<br />     &lt;/div&gt;<br />     &lt;div class="skills__item"&gt;<br />     &lt;/div&gt;<br />     &lt;div class="skills__item"&gt;<br />     &lt;/div&gt;<br />   &lt;/div&gt;<br /> &lt;/div&gt;</code></pre>
+              <pre><code>function moveZeros(arr) {<br> &nbsp; let arrSmall = [];<br> &nbsp; for (let i = 0; i &lt; arr.length; i++){<br>    &nbsp; let val = arr[i];<br>    &nbsp; if (val === 0){<br>       &nbsp; arrSmall.push(...arr.splice(i, 1));<br>       &nbsp; i--;<br>    &nbsp; }<br> &nbsp; }<br> &nbsp; return arr.concat(arrSmall);<br>}</code></pre>
             </div>
           </div>
         </section>

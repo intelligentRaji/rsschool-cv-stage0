@@ -104,6 +104,16 @@ h6 {
   font-size: 40px;
   line-height: 110%;
 }
+@media screen and (max-width: 420px) {
+  .contacts__title, .languages__title, .education__title, .code__title, .projects__title, .skills__title, .about__title {
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contacts__title, .languages__title, .education__title, .code__title, .projects__title, .skills__title, .about__title {
+    font-size: 32px;
+  }
+}
 
 .contacts-bottom__designer, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
   font-family: "Inter";
@@ -112,6 +122,11 @@ h6 {
   font-size: 20px;
   line-height: 140%;
   color: #202020;
+}
+@media screen and (max-width: 320px) {
+  .contacts-bottom__designer, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
+    font-size: 14px;
+  }
 }
 
 html {
@@ -123,6 +138,16 @@ html {
   flex-direction: column;
   overflow: hidden;
   background: url("../assets/img/Ellipse_1.png") left 2% no-repeat, url("../assets/img/Ellipse_2.png") right 36% no-repeat, url("../assets/img/Ellipse_3.png") left 55% no-repeat, url("../assets/img/Elipse_4.png") right 84% no-repeat, url("../assets/img/Ellipse_5.png") left 98% no-repeat;
+}
+@media screen and (max-width: 850px) {
+  .wrapper {
+    background: url("../assets/img/Ellipse_1.png") left 2%/50% no-repeat, url("../assets/img/Ellipse_2.png") right 36%/50% no-repeat, url("../assets/img/Ellipse_3.png") left 51%/50% no-repeat, url("../assets/img/Elipse_4.png") right 84%/50% no-repeat, url("../assets/img/Ellipse_5.png") left 98%/50% no-repeat;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    background: url("../assets/img/Ellipse_1.png") left 2%/45% no-repeat, url("../assets/img/Ellipse_2.png") right 36%/45% no-repeat, url("../assets/img/Ellipse_3.png") left 51%/45% no-repeat, url("../assets/img/Elipse_4.png") right 84%/45% no-repeat, url("../assets/img/Ellipse_5.png") left 98%/45% no-repeat;
+  }
 }
 
 .horizontal {
@@ -168,6 +193,16 @@ html {
   position: relative;
   padding-bottom: 200px;
 }
+@media screen and (max-width: 320px) {
+  .picture {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .picture {
+    padding-bottom: 100px;
+  }
+}
 .picture__container {
   position: relative;
 }
@@ -185,6 +220,22 @@ html {
   background-size: cover;
   margin: 0px 0px 50px 0px;
 }
+@media screen and (max-width: 470px) {
+  .picture__img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .picture__img {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .picture__img {
+    margin-bottom: 40px;
+  }
+}
 .picture__name {
   font-family: "Switzer";
   font-style: normal;
@@ -194,13 +245,35 @@ html {
   text-align: center;
   margin: 0px 0px 30px 0px;
 }
+@media screen and (max-width: 470px) {
+  .picture__name {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .picture__name {
+    line-height: 110%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .picture__name {
+    margin-bottom: 20px;
+  }
+}
 .picture__job {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
+  text-align: center;
   color: #adadad;
+}
+@media screen and (max-width: 470px) {
+  .picture__job {
+    font-size: 20px;
+  }
 }
 .picture__logo {
   position: absolute;
@@ -209,6 +282,11 @@ html {
 }
 .picture__logo:hover .picture__social {
   transform: scale(1.2);
+}
+@media screen and (max-width: 850px) {
+  .picture__logo {
+    display: none;
+  }
 }
 .picture__social {
   width: 70px;
@@ -348,13 +426,39 @@ html {
 .about {
   padding-bottom: 200px;
 }
+@media screen and (max-width: 320px) {
+  .about {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about {
+    padding-bottom: 100px;
+  }
+}
 .about__block {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
   gap: 30px;
+}
+@media screen and (max-width: 850px) {
+  .about__block {
+    grid-template-columns: 1fr;
+  }
 }
 .about__title {
   color: #202020;
+}
+@media screen and (max-width: 640px) {
+  .about__title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about__title {
+    margin-bottom: 0px;
+  }
 }
 .about__text {
   font-family: "Inter";
@@ -364,23 +468,60 @@ html {
   line-height: 140%;
   color: #202020;
 }
+@media screen and (max-width: 320px) {
+  .about__text {
+    font-size: 14px;
+  }
+}
 
 .skills {
   padding-bottom: 200px;
 }
+@media screen and (max-width: 320px) {
+  .skills {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .skills {
+    padding-bottom: 100px;
+  }
+}
 .skills__block {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
   gap: 30px;
+}
+@media screen and (max-width: 850px) {
+  .skills__block {
+    grid-template-columns: 1fr;
+  }
 }
 .skills__title {
   color: #202020;
+}
+@media screen and (max-width: 850px) {
+  .skills__title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .skills__title {
+    margin-bottom: 0;
+  }
 }
 .skills__lang {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+}
+@media screen and (max-width: 640px) {
+  .skills__lang {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 .skills-item__type {
   display: flex;
@@ -420,6 +561,16 @@ html {
 .projects {
   padding-bottom: 200px;
 }
+@media screen and (max-width: 320px) {
+  .projects {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .projects {
+    padding-bottom: 100px;
+  }
+}
 .projects__input {
   position: absolute;
   visibility: hidden;
@@ -438,6 +589,16 @@ html {
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 320px) {
+  .projects__slider {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .projects__slider {
+    margin-bottom: 20px;
+  }
+}
 .projects__circles {
   display: flex;
   justify-content: center;
@@ -452,6 +613,12 @@ html {
   transition: all 0.3s ease 0s;
   border: 1px solid transparent;
   cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .projects__circle {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .projects-slider__item {
@@ -643,9 +810,25 @@ html {
 .code {
   padding-bottom: 200px;
 }
+@media screen and (max-width: 320px) {
+  .code {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .code {
+    padding-bottom: 100px;
+  }
+}
 .code__title {
   color: #202020;
   margin-bottom: 70px;
+}
+@media screen and (max-width: 640px) {
+  .code__title {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 }
 .code__viewport {
   background-color: rgba(43, 99, 89, 0.3);
@@ -658,9 +841,40 @@ html {
   line-height: 140%;
   color: #202020;
 }
+@media screen and (max-width: 850px) {
+  .code__viewport {
+    padding: 80px 60px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .code__viewport {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 500px) {
+  .code__viewport {
+    padding: 80px 10px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .code__viewport {
+    overflow-x: scroll;
+  }
+}
 
 .education {
   padding-bottom: 200px;
+}
+@media screen and (max-width: 320px) {
+  .education {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .education {
+    padding-bottom: 100px;
+  }
 }
 .education__title {
   color: #202020;
@@ -677,13 +891,29 @@ html {
   display: flex;
   gap: 60px;
 }
+@media screen and (max-width: 470px) {
+  .education__item {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 .education-item__element {
   flex: 1 1 33.333%;
   padding: 40px 0;
 }
+@media screen and (max-width: 470px) {
+  .education-item__element {
+    padding: 0px;
+  }
+}
 .education-item__year {
   color: #adadad;
+}
+@media screen and (max-width: 640px) {
+  .education-item__year {
+    display: none;
+  }
 }
 .education-item__school {
   font-family: "Inter";
@@ -693,8 +923,20 @@ html {
   line-height: 140%;
   color: #202020;
 }
+@media screen and (max-width: 470px) {
+  .education-item__school {
+    line-height: 100%;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .education-item__school {
+    font-size: 14px;
+  }
+}
 .education-item__type {
   color: rgba(32, 32, 32, 0.8);
+  padding-bottom: 20px;
 }
 .education-item__line {
   position: absolute;
@@ -706,19 +948,46 @@ html {
 .languages {
   padding-bottom: 200px;
 }
+@media screen and (max-width: 320px) {
+  .languages {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .languages {
+    padding-bottom: 100px;
+  }
+}
 .languages__block {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
   gap: 30px;
+}
+@media screen and (max-width: 850px) {
+  .languages__block {
+    grid-template-columns: 1fr;
+  }
 }
 .languages__title {
   color: #202020;
+}
+@media screen and (max-width: 850px) {
+  .languages__title {
+    margin-bottom: 10px;
+  }
 }
 .languages__lang {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+}
+@media screen and (max-width: 640px) {
+  .languages__lang {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 .languages-item__type {
   display: flex;
@@ -753,13 +1022,34 @@ html {
   background-color: #2b6359;
   padding: 60px 0 30px 0;
 }
+@media screen and (max-width: 320px) {
+  .contacts {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contacts {
+    padding: 40px 0;
+  }
+}
 .contacts__block {
   display: flex;
   gap: 60px;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 850px) {
+  .contacts__block {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 .contacts__item {
   flex: 1 1 33.33%;
+}
+@media screen and (max-width: 850px) {
+  .contacts__item {
+    flex: 1 0 100%;
+  }
 }
 .contacts__title {
   color: #fff;
@@ -772,6 +1062,11 @@ html {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 420px) {
+  .contacts__social {
+    gap: 20px;
+  }
+}
 .contacts__element {
   transition: all 0.3s ease 0s;
 }
@@ -782,6 +1077,12 @@ html {
 .contacts__icon {
   width: 40px;
   height: 40px;
+}
+@media screen and (max-width: 420px) {
+  .contacts__icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 .contacts__line {
   background-color: #f0f0f0;
@@ -812,6 +1113,12 @@ html {
 .contacts-bottom__svg {
   width: 150px;
   height: 80px;
+}
+@media screen and (max-width: 420px) {
+  .contacts-bottom__svg {
+    width: 75px;
+    height: 40px;
+  }
 }
 .contacts-bottom__designer {
   font-weight: 300;
