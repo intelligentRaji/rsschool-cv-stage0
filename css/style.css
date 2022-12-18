@@ -164,9 +164,29 @@ html {
 .header {
   padding: 50px 0 0 0;
 }
+@media screen and (max-width: 850px) {
+  .header__navigation {
+    display: none;
+  }
+}
 .header__list {
   display: flex;
   justify-content: space-between;
+}
+.header__burger {
+  background: transparent;
+  margin-left: auto;
+  transition: all 0.2s ease 0s;
+  display: none;
+}
+.header__burger:hover {
+  transform: scale(1.1);
+  opacity: 0.75;
+}
+@media screen and (max-width: 850px) {
+  .header__burger {
+    display: block;
+  }
 }
 .header__item {
   font-family: "Inter";
