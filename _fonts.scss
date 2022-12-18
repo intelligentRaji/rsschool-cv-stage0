@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Switzer";
+  src: url("assets/fonts/switzer/Switzer-Light.eot");
+  src: url("assets/fonts/switzer/Switzer-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("assets/fonts/switzer/Switzer-Light.woff2") format("woff2"),
+    url("assets/fonts/switzer/Switzer-Light.woff") format("woff"),
+    url("assets/fonts/switzer/Switzer-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
