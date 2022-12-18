@@ -1,2 +1,3 @@
-# rsschool-cv
-https://github.com/intelligentRaji/rsschool-cv.git
+https://intelligentRaji.github.io/rsschool-cv/cv - markdown
+
+https://intelligentRaji.github.io/rsschool-cv/ - website
