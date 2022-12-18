@@ -990,6 +990,15 @@ body {
     }
   }
 
+  &__year {
+    @extend %skills-item;
+    font-weight: 300;
+    color: $lightgrey;
+    @media screen and (max-width: 610px) {
+      display: none;
+    }
+  }
+
   &__designer {
     @extend %skills-item;
     font-weight: 300;

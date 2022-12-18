@@ -115,7 +115,7 @@ h6 {
   }
 }
 
-.contacts-bottom__designer, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
+.contacts-bottom__designer, .contacts-bottom__year, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -124,7 +124,7 @@ h6 {
   color: #202020;
 }
 @media screen and (max-width: 320px) {
-  .contacts-bottom__designer, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
+  .contacts-bottom__designer, .contacts-bottom__year, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
     font-size: 14px;
   }
 }
@@ -1138,6 +1138,15 @@ html {
   .contacts-bottom__svg {
     width: 75px;
     height: 40px;
+  }
+}
+.contacts-bottom__year {
+  font-weight: 300;
+  color: #f0f0f0;
+}
+@media screen and (max-width: 610px) {
+  .contacts-bottom__year {
+    display: none;
   }
 }
 .contacts-bottom__designer {
