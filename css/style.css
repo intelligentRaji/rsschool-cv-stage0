@@ -92,12 +92,22 @@ h6 {
 @font-face {
   font-family: "Switzer";
   src: url("../assets/fonts/switzer/Switzer-Light.eot");
-  src: url("../assets/fonts/switzer/Switzer-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/switzer/Switzer-Light.woff2") format("woff2"), url("../assets/fonts/switzer/Switzer-Light.woff") format("woff"), url("../assets/fonts/switzer/Switzer-Light.ttf") format("truetype");
+  src: url("../assets/fonts/switzer/Switzer-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/switzer/Switzer-Light.woff2") format("woff2"),
+    url("../assets/fonts/switzer/Switzer-Light.woff") format("woff"),
+    url("../assets/fonts/switzer/Switzer-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-.contacts__title, .languages__title, .education__title, .code__title, .projects__title, .skills__title, .about__title {
+.contacts__title,
+.languages__title,
+.education__title,
+.code__title,
+.projects__title,
+.skills__title,
+.about__title {
   font-family: "Switzer";
   font-style: normal;
   font-weight: 300;
@@ -105,17 +115,37 @@ h6 {
   line-height: 110%;
 }
 @media screen and (max-width: 420px) {
-  .contacts__title, .languages__title, .education__title, .code__title, .projects__title, .skills__title, .about__title {
+  .contacts__title,
+  .languages__title,
+  .education__title,
+  .code__title,
+  .projects__title,
+  .skills__title,
+  .about__title {
     font-weight: 400;
   }
 }
 @media screen and (max-width: 320px) {
-  .contacts__title, .languages__title, .education__title, .code__title, .projects__title, .skills__title, .about__title {
+  .contacts__title,
+  .languages__title,
+  .education__title,
+  .code__title,
+  .projects__title,
+  .skills__title,
+  .about__title {
     font-size: 32px;
   }
 }
 
-.contacts-bottom__designer, .contacts-bottom__year, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
+.contacts-bottom__designer,
+.contacts-bottom__year,
+.contacts__info,
+.languages-item__level,
+.languages-item__lang,
+.education-item__type,
+.education-item__year,
+.skills-item__procents,
+.skills-item__lang {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -124,7 +154,15 @@ h6 {
   color: #202020;
 }
 @media screen and (max-width: 320px) {
-  .contacts-bottom__designer, .contacts-bottom__year, .contacts__info, .languages-item__level, .languages-item__lang, .education-item__type, .education-item__year, .skills-item__procents, .skills-item__lang {
+  .contacts-bottom__designer,
+  .contacts-bottom__year,
+  .contacts__info,
+  .languages-item__level,
+  .languages-item__lang,
+  .education-item__type,
+  .education-item__year,
+  .skills-item__procents,
+  .skills-item__lang {
     font-size: 14px;
   }
 }
@@ -137,16 +175,28 @@ html {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: url("../assets/img/Ellipse_1.png") left 2% no-repeat, url("../assets/img/Ellipse_2.png") right 36% no-repeat, url("../assets/img/Ellipse_3.png") left 55% no-repeat, url("../assets/img/Elipse_4.png") right 84% no-repeat, url("../assets/img/Ellipse_5.png") left 98% no-repeat;
+  background: url("../assets/img/Ellipse_1.png") left 2% no-repeat,
+    url("../assets/img/Ellipse_2.png") right 36% no-repeat,
+    url("../assets/img/Ellipse_3.png") left 55% no-repeat,
+    url("../assets/img/Elipse_4.png") right 84% no-repeat,
+    url("../assets/img/Ellipse_5.png") left 98% no-repeat;
 }
 @media screen and (max-width: 850px) {
   .wrapper {
-    background: url("../assets/img/Ellipse_1.png") left 2%/50% no-repeat, url("../assets/img/Ellipse_2.png") right 36%/50% no-repeat, url("../assets/img/Ellipse_3.png") left 51%/50% no-repeat, url("../assets/img/Elipse_4.png") right 84%/50% no-repeat, url("../assets/img/Ellipse_5.png") left 98%/50% no-repeat;
+    background: url("../assets/img/Ellipse_1.png") left 2%/50% no-repeat,
+      url("../assets/img/Ellipse_2.png") right 36%/50% no-repeat,
+      url("../assets/img/Ellipse_3.png") left 51%/50% no-repeat,
+      url("../assets/img/Elipse_4.png") right 84%/50% no-repeat,
+      url("../assets/img/Ellipse_5.png") left 98%/50% no-repeat;
   }
 }
 @media screen and (max-width: 640px) {
   .wrapper {
-    background: url("../assets/img/Ellipse_1.png") left 2%/45% no-repeat, url("../assets/img/Ellipse_2.png") right 36%/45% no-repeat, url("../assets/img/Ellipse_3.png") left 51%/45% no-repeat, url("../assets/img/Elipse_4.png") right 84%/45% no-repeat, url("../assets/img/Ellipse_5.png") left 98%/45% no-repeat;
+    background: url("../assets/img/Ellipse_1.png") left 2%/45% no-repeat,
+      url("../assets/img/Ellipse_2.png") right 36%/45% no-repeat,
+      url("../assets/img/Ellipse_3.png") left 51%/45% no-repeat,
+      url("../assets/img/Elipse_4.png") right 84%/45% no-repeat,
+      url("../assets/img/Ellipse_5.png") left 98%/45% no-repeat;
   }
 }
 
@@ -335,63 +385,63 @@ html {
   left: 2%;
   top: 65.8%;
   -webkit-animation-name: lgrey;
-          animation-name: lgrey;
+  animation-name: lgrey;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-          animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
   -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
+  animation-fill-mode: none;
   -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 .picture__logo--green {
   position: absolute;
   left: 23.6%;
   top: 0%;
   -webkit-animation-name: lgreen;
-          animation-name: lgreen;
+  animation-name: lgreen;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-          animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
   -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
+  animation-fill-mode: none;
   -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 .picture__logo--yellow {
   position: absolute;
   left: 90.8%;
   top: 57.6%;
   -webkit-animation-name: lyellow;
-          animation-name: lyellow;
+  animation-name: lyellow;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-          animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
   -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
+  animation-fill-mode: none;
   -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 
 @-webkit-keyframes lgrey {
@@ -563,19 +613,19 @@ html {
   background-color: #ffe6a6;
 }
 .skills-item__line--html {
-  width: 40%;
+  width: 70%;
 }
 .skills-item__line--css {
-  width: 40%;
+  width: 70%;
 }
 .skills-item__line--js {
-  width: 10%;
+  width: 50%;
 }
 .skills-item__line--git {
-  width: 20%;
+  width: 40%;
 }
 .skills-item__line--figma {
-  width: 20%;
+  width: 40%;
 }
 
 .projects {
@@ -605,9 +655,9 @@ html {
   position: relative;
   margin-bottom: 25px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media screen and (max-width: 320px) {
   .projects__slider {
@@ -713,9 +763,9 @@ html {
   width: 100%;
   height: 100%;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -1053,18 +1103,15 @@ html {
   }
 }
 .contacts__block {
-  display: flex;
-  gap: 60px;
-  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 850px) {
   .contacts__block {
     flex-direction: column;
     gap: 40px;
   }
-}
-.contacts__item {
-  flex: 1 1 33.33%;
 }
 @media screen and (max-width: 850px) {
   .contacts__item {
@@ -1077,9 +1124,11 @@ html {
 .contacts__info {
   font-weight: 300;
   color: #f0f0f0;
+  text-align: center;
 }
 .contacts__social {
   display: flex;
+  flex-direction: row-reverse;
   gap: 30px;
 }
 @media screen and (max-width: 420px) {
@@ -1117,7 +1166,8 @@ html {
 .contacts-info__link {
   margin-bottom: 20px;
 }
-.contacts-info__link, .contacts-info__link:visited {
+.contacts-info__link,
+.contacts-info__link:visited {
   color: inherit;
 }
 .contacts-info__link:hover {
